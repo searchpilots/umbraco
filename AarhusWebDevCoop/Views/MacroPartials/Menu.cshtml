@@ -5,7 +5,7 @@
     var projectDropdown = CurrentPage.AncestorOrSelf(1)
     .Children.Where("DocumentTypeAlias == \"projectsOverview\"")
     .First()
-    .Children
+	.Children()
     .Where("Visible")
 	.Where("projectStatus.Contains(\"9\")")
     .OrderBy("Name");

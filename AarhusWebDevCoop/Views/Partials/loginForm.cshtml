@@ -24,10 +24,10 @@
 
 using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
 {
-
+<div class="row">
 	<div class="form-group col-sm-6">
     <fieldset>
-        <legend>Login</legend>
+        <legend>Logins</legend>
         
         @Html.ValidationSummary("loginModel", true)
 
@@ -44,6 +44,7 @@ using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
         <button class="btn btn-default">Login</button>
     </fieldset> 
 			</div>
+	</div>		
 			
 
 		}

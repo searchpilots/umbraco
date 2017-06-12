@@ -27,7 +27,7 @@ namespace AarhusWebDevCoop.Controllers
             if (!ModelState.IsValid) { return CurrentUmbracoPage(); }
 
             MailMessage message = new MailMessage();
-            message.To.Add("sorenv_b_t@hotmail.com");
+            message.To.Add("tobiashairing@gmail.com");
             message.Subject = model.Subject;
             message.From = new MailAddress(model.Email, model.Name);
             message.Body = model.Message;
@@ -47,7 +47,7 @@ namespace AarhusWebDevCoop.Controllers
                 smtp.EnableSsl = true;
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential("therealbawsdawg@gmail.com", "umbracolol123");
+                smtp.Credentials = new System.Net.NetworkCredential("tobiashairing@gmail.com", "");
                 smtp.EnableSsl = true;
                 // send mail
                 smtp.Send(message);
